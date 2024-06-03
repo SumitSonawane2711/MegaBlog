@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -15,3 +16,7 @@ npm i @reduxjs/toolkit
       @tinymce/tinymce-react 
       html-react-parser
       react-hook-form
+=======
+# MegaBlog
+Blog Web application
+>>>>>>> cafbc496cde6a8263db97daf1186378b1e64e40a
