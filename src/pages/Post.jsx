@@ -15,6 +15,7 @@ export default function Post() {
     const isAuthor = post && userData ? post.userId === userData.$id : false;
 
     useEffect(() => {
+         console.log("slug :",slug);
         if (slug) {
             service.getPost(slug).then((post) => {
                 if (post) setPost(post);
@@ -44,7 +45,7 @@ export default function Post() {
 
                     {isAuthor && (
                         <div className="absolute right-6 top-6">
-                            <Link to={`/edit-post/${post.$id}`}>
+                             <Link to={`/edit-post/${post.$id}`}>
                                 <Button bgColor="bg-green-500" className="mr-3">
                                     Edit
                                 </Button>
